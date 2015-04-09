@@ -1,94 +1,100 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Devoptions</title>
     <link rel="stylesheet" href="../css/style.css" type="application/javascript" />
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" type="application/javascript" />
   </head>
 
   <body>
-    <h1>Development options</h1>
+    <div class="container">
+      <h1>Development options</h1>
 
-    <ul>
-      <li>
-        <h2>Prerequisites</h2>
-        <ul>
-          <li>NodeJS / Io.js</li>
-          <li>NPM (is installed when installing NodeJS)</li>
-          <li>Ruby (used for different file system actions)</li>
-        </ul>
-      </li>
+      <ul>
+        <li>
+          <h2>Prerequisites</h2>
+          <ul>
+            <li>NodeJS / Io.js</li>
+            <li>NPM (is installed when installing NodeJS)</li>
+            <li>Ruby (used for different file system actions)</li>
+          </ul>
+        </li>
 
-      <li>
-        <h2>Frameworks</h2>
-        <ul>
-          <li>AngularJS</li>
-          <li>Ember</li>
-          <li>Meteor</li>
-          <li>Express</li>
-        </ul>
-      </li>
+        <li>
+          <h2>Frameworks</h2>
+          <ul>
+            <li>AngularJS</li>
+            <li>Ember</li>
+            <li>Meteor</li>
+            <li>Express</li>
+          </ul>
+        </li>
 
-      <li>
-        <h2>Build Tools / Package Managers</h2>
-        <ul>
-          <li>NPM</li>
-          <li>Grunt</li>
-          <li>Gulp</li>
-          <li>Bower</li>
-          <li>Broccoli</li>
-        </ul>
-      </li>
+        <li>
+          <h2>Build Tools / Package Managers</h2>
+          <ul>
+            <li>NPM</li>
+            <li>Grunt</li>
+            <li>Gulp</li>
+            <li>Bower</li>
+            <li>Broccoli</li>
+          </ul>
+        </li>
 
-      <li>
-        <h2>Template Engines</h2>
-        <ul>
-          <li>AngularJS</li>
-          <li>Jade</li>
-          <li>Handlebars</li>
-          <li>Mustache</li>
-          <li>Blaze</li>
-          <li>Twig</li>
-        </ul>
-        <p><a href="http://en.wikipedia.org/wiki/Comparison_of_web_template_engines">Comparison of Template engines</a></p>
-      </li>
+        <li>
+          <h2>Template Engines</h2>
+          <ul>
+            <li>AngularJS</li>
+            <li>Jade</li>
+            <li>Handlebars</li>
+            <li>Mustache</li>
+            <li>Blaze</li>
+            <li>Twig</li>
+          </ul>
+          <p><a href="http://en.wikipedia.org/wiki/Comparison_of_web_template_engines">Comparison of Template engines</a></p>
+        </li>
 
-      <li>
-        <h2>CSS Preprocessors</h2>
-        <ul>
-          <li>SASS</li>
-          <li>LESS</li>
-          <li>Stylus</li>
-          <li>Post CSS</li>
-        </ul>
-        <p><a href="http://csspre.com/compare/">Comparison of CSS Preprocessors</a></p>
-      </li>
-    </ul>
+        <li>
+          <h2>CSS Preprocessors</h2>
+          <ul>
+            <li>SASS</li>
+            <li>LESS</li>
+            <li>Stylus</li>
+            <li>Post CSS</li>
+          </ul>
+          <p><a href="http://csspre.com/compare/">Comparison of CSS Preprocessors</a></p>
+        </li>
+      </ul>
 
-    <section>
-      <h1>Setting up development environment</h1>
-      
-      <p>Have your prerequisites ready, after following the install instructions for all of the prerequisites</p>
-      <p>When NodeJS is installed you have access to NPM as well, which is quite useful to install all your modules</p>
-    </section>
+      <section>
+        <h1>Setting up development environment</h1>
+        
+        <p>Have your prerequisites ready, after following the install instructions for all of the prerequisites</p>
+        <p>When NodeJS is installed you have access to NPM as well, which is quite useful to install all your modules</p>
+      </section>
 
-    <section> 
-      <h1>Setting up project</h1>
-      <p>Start with running <code>npm init</code>. This will initialize your <code>package.json</code> file which holds all the information for the packages included in your projects.</p>
-      <p>After filling out all the questions from the <code>npm init</code> command you can start getting the packages you want.</p>
-      <p>
-        Use <code>npm install PACKAGENAME</code> to install a package, if you want to save that to your package.json file (most of the times you want that) just add the <code>--save</code> flag.
-        If the package is only needed during development, you add the <code>--save-dev</code> flag.
-      </p>
+      <section> 
+        <h1>Setting up project</h1>
+        <p>Start with running <code>npm init</code>. This will initialize your <code>package.json</code> file which holds all the information for the packages included in your projects.</p>
+        <p>After filling out all the questions from the <code>npm init</code> command you can start getting the packages you want.</p>
+        <p>
+          Use <code>npm install PACKAGENAME</code> to install a package, if you want to save that to your package.json file (most of the times you want that) just add the <code>--save</code> flag.
+          If the package is only needed during development, you add the <code>--save-dev</code> flag.
+        </p>
 
-      <h3>Example</h3>
-      <p>Let's take an example to get started without going into to much detail, we want to use AngularJS in our project</p>
-      <pre>
-        <code>npm install angular --save</code>
-        .. installs angularJS to the <code>node_modules/</code> folder.
-        Add the following in your HTML file
-        <code>&lt;script src="/node_modules/angular/angular.js"&gt;&lt;/script&gt;</code>
-        AngularJS should be included now and available
-      </pre>
-    </section>
+        <h3>Example</h3>
+        <p>Let's take an example to get started without going into to much detail, we want to use AngularJS in our project</p>
+        <pre>
+          <code>npm install angular --save</code>
+          .. installs angularJS to the <code>node_modules/</code> folder.
+          Add the following in your HTML file
+          <code>&lt;script src="/node_modules/angular/angular.js"&gt;&lt;/script&gt;</code>
+          AngularJS should be included now and available
+        </pre>
+      </section>
+    </div>
   </body>
 </html>
