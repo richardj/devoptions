@@ -1,0 +1,22 @@
+{
+  "name": "devoptions",
+  "version": "1.0.0",
+  "description": "Short presentation about the different options when choosing a development approach",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richardj/devoptions.git"
+  },
+  "author": "richardj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardj/devoptions/issues"
+  },
+  "homepage": "https://github.com/richardj/devoptions",
+  "dependencies": {
+    "bower": "^1.4.1"
+  }
+}
