@@ -17,6 +17,7 @@
         <li>
           <h2>Prerequisites</h2>
           <ul>
+            <li>Git</li>
             <li>NodeJS / Io.js</li>
             <li>NPM (is installed when installing NodeJS)</li>
             <li>Ruby (used for different file system actions)</li>
@@ -24,13 +25,22 @@
         </li>
 
         <li>
-          <h2>Frameworks</h2>
+          <h2>Javascript Frameworks</h2>
           <ul>
             <li>AngularJS</li>
             <li>Ember</li>
             <li>Meteor</li>
             <li>Express</li>
           </ul>
+        </li>
+
+        <li>
+          <h2>CSS Frameworks</h2>
+          <ul>
+            <li>Bootstrap</li>
+            <li>Foundation</li>
+          </ul>
+          <p><a href="http://usablica.github.io/front-end-frameworks/compare.html">Comparison of CSS frameworks</a></p>
         </li>
 
         <li>
@@ -81,20 +91,28 @@
         <p>Start with running <code>npm init</code>. This will initialize your <code>package.json</code> file which holds all the information for the packages included in your projects.</p>
         <p>After filling out all the questions from the <code>npm init</code> command you can start getting the packages you want.</p>
         <p>
+          <strong>Some modules need to be installed globally, do that by adding the <code>-g</code> flag.</strong><br />
           Use <code>npm install PACKAGENAME</code> to install a package, if you want to save that to your package.json file (most of the times you want that) just add the <code>--save</code> flag.
           If the package is only needed during development, you add the <code>--save-dev</code> flag.
         </p>
 
         <h3>Example</h3>
         <p>Let's take an example to get started without going into to much detail, we want to use AngularJS in our project</p>
-        <pre>
-          <code>npm install angular --save</code>
-          .. installs angularJS to the <code>node_modules/</code> folder.
-          Add the following in your HTML file
-          <code>&lt;script src="/node_modules/angular/angular.js"&gt;&lt;/script&gt;</code>
-          AngularJS should be included now and available
-        </pre>
+        <ul>
+          <li><code>npm install angular --save</code></li>
+          <li>... installs angularJS to the <code>node_modules/</code> folder and saves that instruction to your package.json file </li>
+          <li>Add the following in your HTML file </li>
+          <li><code>&lt;script src="/node_modules/angular/angular.js"&gt;&lt;/script&gt;</code></li>
+          <li>AngularJS should be included now and available</li>
+        </ul>
+
+
       </section>
     </div>
+    <footer class="footer">
+      <div class="container">
+        2015
+      </div>
+    </footer>
   </body>
 </html>

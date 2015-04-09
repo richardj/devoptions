@@ -6,3 +6,13 @@ code {
   padding: 2px 3px;
   background: #ddd;
 }
+
+section {
+  margin-bottom: 1em;
+}
+
+footer {
+  height: 200px;
+  padding-top: 20px;
+  background: #f7f7f7;
+}
